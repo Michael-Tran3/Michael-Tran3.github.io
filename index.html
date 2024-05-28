@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="text/javascript" src="index.js"> </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+					$("#content-div").load("home.html");
+			});
+	</script>
+	</head>
+
+	<body>
+		<div class="menu">
+			<p class="menu-item name reactive">
+				Michael Tran
+			</p>
+			<p id="home" style="font-weight: bolder;" class="menu-item selectable reactive" onclick= "selection(this.id)">
+				Home
+			</p>
+			<p id="projects" class="menu-item selectable reactive" onclick= "selection(this.id)">
+				Projects
+			</p>
+			<p id="experience" class="menu-item selectable reactive" onclick= "selection(this.id)">
+				Experience
+			</p>
+			<p id="contact" class="menu-item selectable reactive" onclick= "selection(this.id)">
+				Contact
+			</p>	
+			<div class="links menu-item">
+				
+				<a target="_blank" href="https://www.linkedin.com/in/michael-tran-a42aa928a/">
+					<img class="link" src="icons/linkedin_icon.jpg">
+				</a>
+			</div>	
+		</div>
+
+		<div id="content-div" class = "content">
+		</div>
+		<div class="view-mode">
+			<div id="mode-text" class="view-mode-text">
+				Light
+			</div>
+			<img id="light" class="view-mode view-mode-image" src="icons/mode_icon.svg" onclick="changeViewMode(this.id)">
+		</div>-
+		<div class="background"></div>
+		<div class="background background-2"></div>
+		<div class="background background-3"></div>
+
+	</body>
+</html>
